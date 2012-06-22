@@ -1,8 +1,8 @@
-Source: ruby-foremancli
-Section: ruby
+Source: foremancli
+Section: admin
 Priority: optional
-Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
-Uploaders:  <mru@spamt.net>
+Maintainer: Ulrich Dangel <mru@spamt.net>
+Uploaders:  Ulrich Dangel <mru@spamt.net>
 DM-Upload-Allowed: yes
 Build-Depends: debhelper (>= 7.0.50~), gem2deb (>= 0.2.17~)
 Standards-Version: 3.9.3
@@ -11,10 +11,21 @@ Standards-Version: 3.9.3
 Homepage: https://github.com/ohadlevy/foreman/blob/master/extras/cli/foremancli
 XS-Ruby-Versions: all
 
-Package: ruby-foremancli
+Package: foremancli
 Architecture: all
 XB-Ruby-Versions: ${ruby:Versions}
-Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter
-# rest-client (~> 1.4), json (~> 1.4)
-Description: This is the CLI for Foreman, which is a provisioning tool and node classifier for sysadmins.
- This is the CLI for Foreman, which is a provisioning tool and node classifier for sysadmins.
+Depends: ${shlibs:Depends}, ${misc:Depends},
+         ruby | ruby-interpreter,
+         ruby-rest-client,
+         ruby-json
+Description: commandline search interface to Foreman
+ This is a commandline tool for searching node information stored in a
+ Foreman server.
+ .
+ foremancli can be used to search and access all the stored information in
+ a Foreman server and present the data in text, json or yaml formats.
+ .
+ Foreman is a server application that can be used to provision bare metal,
+ virtual and cloud servers, and integrates with the Puppet configuration
+ management system to provide full life cycle managements of one's server
+ infrastructure.
