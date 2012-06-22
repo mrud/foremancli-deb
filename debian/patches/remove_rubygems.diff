@@ -1,0 +1,14 @@
+Description: Remove require 'rubygems' from bin/foremancli
+ Upstream is not interested in removing require 'rubygems'
+Author: Ulrich Dangel <mru@spamt.net>
+
+--- a/bin/foremancli
++++ b/bin/foremancli
+@@ -144,7 +144,6 @@
+   exit 1
+ end
+ 
+-require "rubygems"
+ require "rest_client"
+ require "json"
+ require "yaml"
