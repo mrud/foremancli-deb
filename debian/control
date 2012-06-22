@@ -1,0 +1,20 @@
+Source: ruby-foremancli
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders:  <mru@grml.org>
+DM-Upload-Allowed: yes
+Build-Depends: debhelper (>= 7.0.50~), gem2deb (>= 0.2.17~)
+Standards-Version: 3.9.3
+#Vcs-Git: git://git.debian.org/pkg-ruby-extras/ruby-foremancli.git
+#Vcs-Browser: http://git.debian.org/?p=pkg-ruby-extras/ruby-foremancli.git;a=summary
+Homepage: https://github.com/ohadlevy/foreman/blob/master/extras/cli/foremancli
+XS-Ruby-Versions: all
+
+Package: ruby-foremancli
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter
+# rest-client (~> 1.4), json (~> 1.4)
+Description: This is the CLI for Foreman, which is a provisioning tool and node classifier for sysadmins.
+ This is the CLI for Foreman, which is a provisioning tool and node classifier for sysadmins.
