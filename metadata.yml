@@ -1,0 +1,101 @@
+--- !ruby/object:Gem::Specification 
+name: foremancli
+version: !ruby/object:Gem::Version 
+  hash: 99
+  prerelease: 
+  segments: 
+  - 0
+  - 4
+  - 2
+  - 2
+  version: 0.4.2.2
+platform: ruby
+authors: 
+- Brian Gupta
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2012-05-01 00:00:00 Z
+dependencies: 
+- !ruby/object:Gem::Dependency 
+  name: rest-client
+  prerelease: false
+  requirement: &id001 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ~>
+      - !ruby/object:Gem::Version 
+        hash: 7
+        segments: 
+        - 1
+        - 4
+        version: "1.4"
+  type: :runtime
+  version_requirements: *id001
+- !ruby/object:Gem::Dependency 
+  name: json
+  prerelease: false
+  requirement: &id002 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ~>
+      - !ruby/object:Gem::Version 
+        hash: 7
+        segments: 
+        - 1
+        - 4
+        version: "1.4"
+  type: :runtime
+  version_requirements: *id002
+description: |
+  This is the CLI for Foreman, which is a provisioning tool and node classifier for sysadmins.
+
+email: brian.gupta@brandorr.com
+executables: 
+- foremancli
+extensions: []
+
+extra_rdoc_files: []
+
+files: 
+- bin/foremancli
+- foremancli-0.4.1.gem
+- foremancli-0.4.2.1.gem
+- foremancli.gemspec
+- lib/foremancli/version.rb
+homepage: https://github.com/ohadlevy/foreman/blob/master/extras/cli/foremancli
+licenses: []
+
+post_install_message: 
+rdoc_options: []
+
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  none: false
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      hash: 3
+      segments: 
+      - 0
+      version: "0"
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  none: false
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      hash: 3
+      segments: 
+      - 0
+      version: "0"
+requirements: []
+
+rubyforge_project: 
+rubygems_version: 1.8.24
+signing_key: 
+specification_version: 3
+summary: This is the CLI for Foreman, which is a provisioning tool and node classifier for sysadmins.
+test_files: []
+
