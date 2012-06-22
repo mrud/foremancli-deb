@@ -1,3 +1,3 @@
 module Foremancli
-  VERSION = '0.4.2.2'
+  VERSION = '1.0'
 end

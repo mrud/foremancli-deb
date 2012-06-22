@@ -1,14 +1,12 @@
 --- !ruby/object:Gem::Specification 
 name: foremancli
 version: !ruby/object:Gem::Version 
-  hash: 99
+  hash: 15
   prerelease: 
   segments: 
+  - 1
   - 0
-  - 4
-  - 2
-  - 2
-  version: 0.4.2.2
+  version: "1.0"
 platform: ruby
 authors: 
 - Brian Gupta
@@ -60,8 +58,6 @@ extra_rdoc_files: []
 
 files: 
 - bin/foremancli
-- foremancli-0.4.1.gem
-- foremancli-0.4.2.1.gem
 - foremancli.gemspec
 - lib/foremancli/version.rb
 homepage: https://github.com/ohadlevy/foreman/blob/master/extras/cli/foremancli
