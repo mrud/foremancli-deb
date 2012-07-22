@@ -1,0 +1,167 @@
+foremancli(1) -- comandline search interface to Foreman
+====================================================
+
+## SYNOPSIS
+
+`foremancli` <options>
+
+
+## DESCRIPTION
+
+Query Foreman server for stored node information.
+
+## OPTIONS
+
+* `-d`, `test`:
+  The location of the Gemfile(5) that bundler should use. This defaults
+  to a gemfile in the current working directory. In general, bundler
+  will assume that the location of the Gemfile(5) is also the project
+  root, and will look for the `Gemfile.lock` and `vendor/cache` relative
+  to it.
+
+## OPTIONS
+
+* `-d`, `--debug`:
+  The location of the Gemfile(5) that bundler should use. This defaults
+  to a gemfile in the current working directory. In general, bundler
+  will assume that the location of the Gemfile(5) is also the project
+  root, and will look for the `Gemfile.lock` and `vendor/cache` relative
+  to it.
+
+* `-u`, `--user` <USER>:
+  Foreman user. Instead of providing the user via the command-line you can also set the
+  `FOREMAN_USER` environment variable.
+
+* `-p`, `--pass` <PASSWORD>:
+    Foreman password. Instead of providing the password via the command-line you can also set
+  the `FOREMAN_PASSWORD` environment variable.
+
+* `-s`, `--server` <URL>:
+   Foreman Server URL. Instead of providing the URL via the command-line
+   you can also set `FOREMAN_SERVER` environment variable.
+
+* `--json`:
+  JSON output
+
+* `--yaml`:
+  YAML output
+
+* `--status`:
+  Foreman status
+
+* `--custom` <COLLECTION>:
+  Custom COLLECTION string, see:
+  http://theforeman.org/projects/foreman/wiki/API for more information
+
+* `--architectures` <filter>:
+  Retrieve a list of architectures
+
+* `--common_parameters` <filter>:
+  Retrieve a list of common_parameters
+
+* `--config_templates` <filter>:
+  Retrieve a list of config_templates
+
+* `--domains` <filter>:
+  Retrieve a list of domains
+
+* `--environments` <filter>:
+  Retrieve a list of environments
+
+* `--fact_values` <filter>:
+  Retrieve a list of fact_values
+
+* `--hosts` <filter>:
+  Retrieve a list of hosts
+
+* `--hostgroups` <filter>:
+  Retrieve a list of hostgroups
+
+* `--media` <filter>:
+  Retrieve a list of media
+
+* `--puppetclasses` <filter>:
+  Retrieve a list of puppetclasses
+
+* `--reports` <filter>:
+  Retrieve a list of reports
+
+* `--roles` <filter>:
+  Retrieve a list of roles
+
+* `--settings` <filter>:
+  Retrieve a list of settings
+
+* `--lookup_keys` <filter>:
+  Retrieve a list of lookup_keys
+
+* `--dashboard` <filter>:
+  Retrieve a list of dashboard
+
+* `--operatingsystems` <filter>:
+  Retrieve a list of operatingsystems
+
+* `--subnets` <filter>:
+  Retrieve a list of subnets
+
+* `--ptables` <filter>:
+  Retrieve a list of ptables
+
+* `--users` <filter>:
+  Retrieve a list of users
+
+* `--auth_source_ldaps`:
+  Retrieve a list of auth_source_ldaps
+
+* `--hypervisors`:
+  Retrieve a list of hypervisors
+
+* `--lookup_values`:
+  Retrieve a list of lookup_values
+
+* `--smart_proxies`:
+  Retrieve a list of smart_proxies
+
+* `--statistics`:
+  Retrieve a list of statistics
+
+* `--usergroups`:
+  Retrieve a list of usergroups
+
+* `--audits`:
+  Not implemented
+
+* `--bookmarks`:
+  Not implemented
+
+* `-h`, `--help`:
+  Show help message
+
+## ENVIRONMENT
+
+Instead of specifying server credentials on the command-line you can
+specify following environment variables:
+
+* `FOREMAN_SERVER`:
+  Foreman Server URL
+
+* `FOREMAN_USER`:
+  Foreman user
+
+* `FOREMAN_PASSWORD`:
+  Foreman password
+
+The options specified on the command-line take precedence over ENVIRONMENT VARIABLES.
+
+## FILTERS
+
+Please see
+http://theforeman.org/projects/foreman/wiki/Search_API for more information
+
+## Examples
+
+  foremancli --hosts "domain = domain.com AND class = squid"
+
+ foremancli --hosts "domain = domain.com AND facts.architecture = x86_64 AND class = module::class--classes name = squid"`
+
+ foremancli --domains "name = domain.com"

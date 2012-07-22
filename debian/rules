@@ -13,3 +13,11 @@
 
 %:
 	dh $@ --buildsystem=ruby --with ruby
+
+override_dh_auto_clean:
+	rm -f debian/foremancli.1
+	dh_auto_clean
+
+override_dh_install:
+	ronn -roff debian/foremancli.ronn
+	dh_auto_install

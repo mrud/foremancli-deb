@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
 Uploaders:  Ulrich Dangel <uli@debian.org>
 DM-Upload-Allowed: yes
-Build-Depends: debhelper (>= 7.0.50~), gem2deb (>= 0.3.0~)
+Build-Depends: debhelper (>= 9~), gem2deb (>= 0.3.0~), ruby-ronn
 Standards-Version: 3.9.3
 Vcs-Git: git://git.debian.org/pkg-ruby-extras/ruby-foremancli.git
 Vcs-Browser: http://git.debian.org/?p=pkg-ruby-extras/foremancli.git;a=summary
