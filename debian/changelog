@@ -1,5 +1,5 @@
-foremancli (0.4.2.2-1) UNRELEASED; urgency=low
+foremancli (1.0-1) UNRELEASED; urgency=low
 
-  * Initial release (Closes: #nnnn)
+  * Initial release (Closes: #678572)
 
  -- Ulrich Dangel <uli@debian.org>  Fri, 22 Jun 2012 20:17:37 +0200
