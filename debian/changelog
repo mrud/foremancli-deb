@@ -1,5 +1,5 @@
-foremancli (1.0-1) UNRELEASED; urgency=low
+foremancli (1.0-1) unstable; urgency=low
 
   * Initial release (Closes: #678572)
 
- -- Ulrich Dangel <uli@debian.org>  Fri, 22 Jun 2012 20:17:37 +0200
+ -- Ulrich Dangel <uli@debian.org>  Mon, 23 Jul 2012 03:11:50 +0200
