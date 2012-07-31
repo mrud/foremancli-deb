@@ -1,5 +1,5 @@
 foremancli(1) -- comandline search interface to Foreman
-====================================================
+=======================================================
 
 ## SYNOPSIS
 
@@ -12,33 +12,23 @@ Query Foreman server for stored node information.
 
 ## OPTIONS
 
-* `-d`, `test`:
-  The location of the Gemfile(5) that bundler should use. This defaults
-  to a gemfile in the current working directory. In general, bundler
-  will assume that the location of the Gemfile(5) is also the project
-  root, and will look for the `Gemfile.lock` and `vendor/cache` relative
-  to it.
-
-## OPTIONS
-
 * `-d`, `--debug`:
-  The location of the Gemfile(5) that bundler should use. This defaults
-  to a gemfile in the current working directory. In general, bundler
-  will assume that the location of the Gemfile(5) is also the project
-  root, and will look for the `Gemfile.lock` and `vendor/cache` relative
-  to it.
+  Output more information
 
 * `-u`, `--user` <USER>:
   Foreman user. Instead of providing the user via the command-line you can also set the
-  `FOREMAN_USER` environment variable.
+  `FOREMAN_USER` environment variable. The user specified via the
+  command-line takes precedence over the environment variable.
 
 * `-p`, `--pass` <PASSWORD>:
-    Foreman password. Instead of providing the password via the command-line you can also set
-  the `FOREMAN_PASSWORD` environment variable.
+  Foreman password. Instead of providing the password via the command-line you can also set
+  the `FOREMAN_PASSWORD` environment variable. The password specified via
+  the command-line takes precedence over the environment variable.
 
 * `-s`, `--server` <URL>:
-   Foreman Server URL. Instead of providing the URL via the command-line
-   you can also set `FOREMAN_SERVER` environment variable.
+  Foreman Server URL. Instead of providing the URL via the command-line
+  you can also set `FOREMAN_SERVER` environment variable. The url
+  specified via the command-line takes precedence over the environment variable.
 
 * `--json`:
   JSON output
@@ -151,7 +141,7 @@ specify following environment variables:
 * `FOREMAN_PASSWORD`:
   Foreman password
 
-The options specified on the command-line take precedence over ENVIRONMENT VARIABLES.
+The options specified on the command-line take precedence over `ENVIRONMENT VARIABLES`.
 
 ## FILTERS
 
@@ -160,7 +150,7 @@ http://theforeman.org/projects/foreman/wiki/Search_API for more information
 
 ## Examples
 
-  foremancli --hosts "domain = domain.com AND class = squid"
+ foremancli --hosts "domain = domain.com AND class = squid"
 
  foremancli --hosts "domain = domain.com AND facts.architecture = x86_64 AND class = module::class--classes name = squid"`
 
