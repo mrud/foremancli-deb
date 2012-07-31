@@ -1,3 +1,9 @@
+foremancli (1.0-2) unstable; urgency=low
+
+  * [89dec27] Update foremancli manpage
+
+ -- Ulrich Dangel <uli@debian.org>  Tue, 31 Jul 2012 22:24:47 +0200
+
 foremancli (1.0-1) unstable; urgency=low
 
   * Initial release (Closes: #678572)
